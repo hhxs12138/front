@@ -7,6 +7,10 @@ const routes = [
   {
     path: '/',
     component: () => import('../components/Home')
+  },
+  {
+    path: '/:catchAll(.*)',
+    component: () => import('../components/Error')
   }
 ]
 export default createRouter({
