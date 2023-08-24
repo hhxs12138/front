@@ -9,6 +9,10 @@ const routes = [
     component: () => import('../components/Home')
   },
   {
+    path: '/page',
+    component: () => import('../components/page')
+  },
+  {
     path: '/:catchAll(.*)',
     component: () => import('../components/Error')
   }

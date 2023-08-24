@@ -22,6 +22,7 @@
 import HelloWorld from './components/HelloWorld.vue'
 import Home from './components/Home.vue'
 import Error from './components/Error.vue'
+import page from './components/page.vue'
 
 
 //kkk
@@ -30,7 +31,8 @@ export default {
   components: {
     HelloWorld,
     Home,
-    Error
+    Error,
+    page
   },
   data(){
     return {
@@ -46,6 +48,10 @@ export default {
         console.log("*")
       }
     */
+    goHome:function (){
+      this.$router.push({path: '../components/Home.vue'})
+    },
+
     onCounting(){
       this.countNumber++
     }
